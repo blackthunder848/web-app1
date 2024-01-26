@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import logo from './assets/images/background/foodbg.webp'
+import Header from './components/Header';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div className="bg-[url('../src/assets/images/background/foodbg.webp')] bg-cover bg-no-repeat min-h-screen">
+     <Header/>
+     <div className='flex text-[52px] font-bold leading-[64px]  px-10 items-center min-h-screen'>
+     <h1>Order delivery near you</h1>
+     </div>
+
+
     </div>
   );
 }
